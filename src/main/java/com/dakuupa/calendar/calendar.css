@@ -1,0 +1,79 @@
+/*Modify as needed.*/
+
+.htmlcalendar{
+    font-family: Arial;
+}
+
+.htmlcalendar table{
+    border: #999999;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-style: solid;
+    min-height: 780px;
+}
+
+.htmlcalendar tr{
+    border: #999999;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.htmlcalendar th{
+    border: #999999;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-style: solid;
+    background: #42C0FB;
+    min-width: 130px;
+    height: 50px;
+}
+
+.htmlcalendar td{
+    border: #999999;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-style: solid;
+    background: #FFFFFF;
+    width: 100px;
+    text-align: left;
+    vertical-align: top;
+    padding: 4px;
+    height: 100px;
+}
+
+.htmlcalendar td.today{
+    border: #999999;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-style: solid;
+    background: #B4D7BF;
+    width: 100px;
+    text-align: left;
+    font-weight: bold;
+    vertical-align: top;
+    padding: 4px;
+    height: 100px;
+}
+
+.htmlcalendar td.nothing{
+    border: #999999;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-style: solid;
+    background: #CCCCCC;
+    min-width: 100px;
+    height: 100px;
+}
+
+.event{
+    border: #AAAAAA;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-style: solid;
+    background: #EEDD82;
+    padding: 2px;
+    margin: 2px;
+    font-size: 7pt;
+    width: 100px;
+}
