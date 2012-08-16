@@ -14,11 +14,8 @@
     <version>1.0-SNAPSHOT</version>
 
     <name>struts2-crud-template</name>
-    <description>
-        Provides Struts 2 developers with easy to use framework for building 
-        CRUD (Create, read, update, delete) applications using convention over
-        configuration. Includes several utility classes 
-        to facilitate quick Struts 2 app development.
+    <description>Provides Struts 2 developers with easy to use framework for building CRUD (Create, read, update, delete) applications using convention over
+configuration. Includes several utility classes to facilitate quick Struts 2 app development.
     </description>
     <url>http://www.dakuupa.com</url>
     <licenses>
