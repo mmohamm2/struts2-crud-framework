@@ -1,19 +1,48 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+    </parent>
 
     <groupId>com.dakuupa</groupId>
     <artifactId>struts2-crud-template</artifactId>
     <packaging>jar</packaging>
+    <version>1.0-SNAPSHOT</version>
 
     <name>struts2-crud-template</name>
+    <description>
+        Provides Struts 2 developers with easy to use framework for building 
+        CRUD (Create, read, update, delete) applications using convention over
+        configuration. Includes several utility classes 
+        to facilitate quick Struts 2 app development.
+    </description>
+    <url>http://www.dakuupa.com</url>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <email>etwilliams@dakuupa.com</email>
+            <name>Eric Williams</name>
+            <organization>dakuupa.com</organization>
+            <organizationUrl>http://www.dakuupa.com</organizationUrl>
+        </developer>
+    </developers>
     
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
+                <version>2.5.1</version>
                 <configuration>
                     <source>1.6</source>
                     <target>1.6</target>
@@ -26,6 +55,30 @@
                 <configuration>
                     <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.8.1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.1.2</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <version>1.4</version>
             </plugin>
         </plugins>
     </build>
@@ -98,10 +151,9 @@
         </dependency>
     </dependencies>
     
-    <version>1.0-SNAPSHOT</version>
-    
     <scm>
-        <connection>scm:hg:file:///${basedir}</connection>
-        <developerConnection>scm:hg:file:///${basedir}</developerConnection>
+        <connection>scm:hg:https://etwilliams1985@code.google.com/p/struts2-crud-framework/</connection>
+        <developerConnection>scm:hg:https://etwilliams1985@code.google.com/p/struts2-crud-framework/</developerConnection>
+        <url>https://etwilliams1985@code.google.com/p/struts2-crud-framework/</url>
     </scm>
 </project>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-javadoc-jar</actionName>
+            <displayName>javadoc-jar</displayName>
+            <goals>
+                <goal>javadoc:aggregate-jar</goal>
+            </goals>
+        </action>
+        <action>
+            <actionName>CUSTOM-source-jar</actionName>
+            <displayName>source-jar</displayName>
+            <goals>
+                <goal>source:jar</goal>
+            </goals>
+        </action>
+    </actions>
