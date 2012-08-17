@@ -35,4 +35,11 @@
                 <goal>release:rollback</goal>
             </goals>
         </action>
+        <action>
+            <actionName>CUSTOM-repository:bundle-create</actionName>
+            <displayName>repository:bundle-create</displayName>
+            <goals>
+                <goal>repository:bundle-create</goal>
+            </goals>
+        </action>
     </actions>
