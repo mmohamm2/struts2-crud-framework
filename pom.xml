@@ -11,11 +11,11 @@
     <groupId>com.dakuupa</groupId>
     <artifactId>struts2-crud-template</artifactId>
     <packaging>jar</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <name>struts2-crud-template</name>
     <description>Provides Struts 2 developers with easy to use framework for building CRUD (Create, read, update, delete) applications using convention over
-configuration. Includes several utility classes to facilitate quick Struts 2 app development.
+        configuration. Includes several utility classes to facilitate quick Struts 2 app development.
     </description>
     <url>http://www.dakuupa.com</url>
     <licenses>
@@ -50,7 +50,7 @@ configuration. Includes several utility classes to facilitate quick Struts 2 app
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>2.5</version>
                 <configuration>
-                    <encoding>${project.build.sourceEncoding}</encoding>
+                    <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
             <plugin>
@@ -79,10 +79,6 @@ configuration. Includes several utility classes to facilitate quick Struts 2 app
             </plugin>
         </plugins>
     </build>
-    
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
 
     <dependencies>
         <dependency>
