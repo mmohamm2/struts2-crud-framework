@@ -11,7 +11,7 @@
     <groupId>com.dakuupa</groupId>
     <artifactId>struts2-crud-template</artifactId>
     <packaging>jar</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <name>struts2-crud-template</name>
     <description>Provides Struts 2 developers with easy to use framework for building CRUD (Create, read, update, delete) applications using convention over
