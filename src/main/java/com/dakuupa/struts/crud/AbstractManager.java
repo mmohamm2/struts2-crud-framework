@@ -6,13 +6,15 @@ import javax.persistence.EntityManager;
 /**
  *
  * @author etwilliams
- * same as the the AbstractFacade from Netbeans autogeneration
+ * modified AbstractFacade from NetBeans autogeneration
  */
 public abstract class AbstractManager<T> {
-    private Class<T> entityClass;
+    protected Class<T> entityClass;
+    protected String entityName;
 
     public AbstractManager(Class<T> entityClass) {
         this.entityClass = entityClass;
+        this.entityName = entityClass.getSimpleName();
     }
 
     protected abstract EntityManager getEntityManager();
@@ -55,5 +57,5 @@ public abstract class AbstractManager<T> {
         javax.persistence.Query q = getEntityManager().createQuery(cq);
         return ((Long) q.getSingleResult()).intValue();
     }
-    
+
 }

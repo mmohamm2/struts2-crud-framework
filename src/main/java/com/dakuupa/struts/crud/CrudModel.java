@@ -12,11 +12,9 @@ public class CrudModel {
 
     @XmlTransient
     protected Integer id = -1;
-    
     //action to call (for processForm method)
     @XmlTransient
     protected String action;
-    
     @XmlTransient
     protected User user = new User();
     @XmlTransient
@@ -27,11 +25,11 @@ public class CrudModel {
     protected boolean requirePermission = false;
     @XmlTransient
     protected boolean returnToListOnAdd = false;
-    
+    @XmlTransient
+    protected boolean returnToListOnUpdate = false;
     //item list
     @XmlTransient
     protected List modelList = new ArrayList();
-    
     //Messages
     @XmlTransient
     private List<String> helpMessages = new ArrayList<String>();
@@ -52,6 +50,14 @@ public class CrudModel {
         this.forwardToListResult = forwardToListResult;
         this.requirePermission = requirePermission;
         this.returnToListOnAdd = returnToListOnAdd;
+    }
+
+    public CrudModel(String modelDisplayName, String forwardToListResult, boolean requirePermission, boolean returnToListOnAdd, boolean returnToListOnUpdate) {
+        this.modelDisplayName = modelDisplayName;
+        this.forwardToListResult = forwardToListResult;
+        this.requirePermission = requirePermission;
+        this.returnToListOnAdd = returnToListOnAdd;
+        this.returnToListOnUpdate = returnToListOnUpdate;
     }
 
     @XmlTransient
@@ -140,5 +146,13 @@ public class CrudModel {
     @XmlTransient
     public List<String> getWarningMessages() {
         return warningMessages;
+    }
+
+    public boolean isReturnToListOnUpdate() {
+        return returnToListOnUpdate;
+    }
+
+    public void setReturnToListOnUpdate(boolean returnToListOnUpdate) {
+        this.returnToListOnUpdate = returnToListOnUpdate;
     }
 }

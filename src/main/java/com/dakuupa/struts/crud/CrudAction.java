@@ -135,7 +135,15 @@ public abstract class CrudAction<T extends CrudModel> extends ActionSupport impl
                         read();
                         model.setAction(UPDATE_ACTION);
                         addSuccessMessage("Updated " + model.getModelDisplayName());
-                        return SUCCESS;
+                        
+                        if (model.isReturnToListOnUpdate()) {
+                            list();
+                            model.setAction(LIST_ACTION);
+                            return model.getForwardToListResult();
+                        } else {
+                            return SUCCESS;
+                        }
+                        
                     } else {
                         return ERROR;
                     }
