@@ -9,14 +9,17 @@ import com.opensymphony.xwork2.interceptor.Interceptor;
  */
 public abstract class AroundInterceptor implements Interceptor {
 
+    @Override
     public void destroy() {
     }
 
+    @Override
     public void init() {
     }
 
+    @Override
     public String intercept(ActionInvocation invocation) throws Exception {
-        String result = null;
+        String result;
 
         before(invocation);
         result = invocation.invoke();

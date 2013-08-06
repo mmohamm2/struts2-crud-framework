@@ -10,7 +10,6 @@ public class CalendarEvent {
     private int dayOfMonth;
     private String title;
     private String description;
-    //link should be formatted as someAction.action?id=
     private String link;
 
     public CalendarEvent() {

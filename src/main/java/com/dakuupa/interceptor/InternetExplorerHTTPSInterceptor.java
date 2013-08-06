@@ -11,10 +11,17 @@ import org.apache.struts2.ServletActionContext;
  */
 public class InternetExplorerHTTPSInterceptor extends AroundInterceptor {
 
+    @Override
     protected void after(ActionInvocation actionInvocation, String string) throws Exception {
         // Nothing
     }
 
+    /**
+     *
+     * @param actionInvocation
+     * @throws Exception
+     */
+    @Override
     protected void before(ActionInvocation actionInvocation) throws Exception {
         HttpServletResponse response = (HttpServletResponse) actionInvocation.getInvocationContext().get(ServletActionContext.HTTP_RESPONSE);
         response.setHeader("Pragma", "public");

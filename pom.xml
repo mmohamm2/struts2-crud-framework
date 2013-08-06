@@ -1,20 +1,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     
+    <!--
     <parent>
         <groupId>org.sonatype.oss</groupId>
         <artifactId>oss-parent</artifactId>
         <version>7</version>
     </parent>
+    -->
 
     <groupId>com.dakuupa</groupId>
     <artifactId>struts2-crud-framework</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.1</version>
+    <version>2.0-SNAPSHOT</version>
 
     <name>struts2-crud-framework</name>
-    <description>Provides Struts 2 developers with easy to use framework for building CRUD (Create, read, update, delete) applications using convention over
-        configuration. Includes several utility classes to facilitate quick Struts 2 app development.
+    <description>Provides Struts 2 developers with easy to use framework for building CRUD (Create, read, update, delete) applications using convention over configuration. Includes several utility classes to facilitate quick Struts 2 app development.
     </description>
     <url>http://www.dakuupa.com</url>
     <licenses>
@@ -47,7 +48,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
-                <version>2.5</version>
+                <version>2.2</version>
                 <configuration>
                     <encoding>UTF-8</encoding>
                 </configuration>
@@ -112,48 +113,13 @@
         </dependency>
         <dependency>
             <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-cdi-plugin</artifactId>
+            <version>2.3.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.struts</groupId>
             <artifactId>struts2-tiles-plugin</artifactId>
             <version>2.3.4</version>
-        </dependency>
-        <dependency>
-            <groupId>commons-beanutils</groupId>
-            <artifactId>commons-beanutils</artifactId>
-            <version>1.8.3</version>
-        </dependency>
-        <dependency>
-            <groupId>commons-collections</groupId>
-            <artifactId>commons-collections</artifactId>
-            <version>3.2.1</version>
-        </dependency>
-        <dependency>
-            <groupId>commons-digester</groupId>
-            <artifactId>commons-digester</artifactId>
-            <version>2.1</version>
-        </dependency>
-        <dependency>
-            <groupId>commons-lang</groupId>
-            <artifactId>commons-lang</artifactId>
-            <version>2.6</version>
-        </dependency>
-        <dependency>
-            <groupId>com.lowagie</groupId>
-            <artifactId>itext</artifactId>
-            <version>2.1.7</version>
-        </dependency>
-        <dependency>
-            <groupId>ognl</groupId>
-            <artifactId>ognl</artifactId>
-            <version>3.0.5</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi</artifactId>
-            <version>3.7</version>
-        </dependency>
-        <dependency>
-            <groupId>javax.mail</groupId>
-            <artifactId>mail</artifactId>
-            <version>1.4.4</version>
         </dependency>
         <dependency>
             <groupId>javax</groupId>
